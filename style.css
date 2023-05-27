@@ -562,4 +562,12 @@ footer p {
     font-size: 22px;
     cursor: pointer;
   }
+  .promo {
+  text-align: center;
+  background-image: url(promo-bg.jpg);
+
+  background-attachment: fixed;
+
+  background-size: cover;
+}
 }
