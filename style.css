@@ -1,0 +1,563 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+#mytext {
+  opacity: 0;
+  animation: slideInRight 1s ease;
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#italy:hover {
+  transform: scale(1.2);
+}
+body {
+  margin: 0;
+}
+
+/* гедер навігація і так далі */
+
+header {
+  text-align: center;
+  display: flex;
+  z-index: 100;
+  top: 0;
+  /* padding-bottom: 20px; */
+  background-color: white;
+  position: sticky;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+nav,
+ul {
+  list-style: none;
+  /* display: flex; */
+}
+.inst {
+  display: block;
+}
+.menutop {
+  display: flex;
+  margin-top: 10px;
+  list-style: none;
+}
+.menutop ul {
+  display: flex;
+}
+.headname {
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-right: 50px;
+  justify-content: center;
+}
+nav {
+  position: relative;
+}
+
+nav > li {
+  position: relative;
+  margin: 20px 30px;
+}
+
+.center-link {
+  font-size: 25px;
+  padding: 20px;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(126, 84, 139);
+  margin: 5px;
+}
+
+/* менюшка з трьох полос */
+header > span {
+  color: rgb(126, 84, 139);
+  font-family: "EB Garamond", serif;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(190, 155, 200);
+}
+
+a:active {
+  color: rgb(126, 84, 139);
+}
+
+li > a {
+  color: rgb(126, 84, 139);
+  font-family: "Poppins", sans-serif;
+}
+
+/* блок з заголовком і кнопкою */
+
+.promo {
+  text-align: center;
+  background-image: url(/src/img/promo-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  background-size: cover;
+}
+
+.promo h2 {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  padding-top: 180px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "EB Garamond", serif;
+  font-size: 60px;
+  font-weight: 400;
+  margin: 60px 0 120px 0;
+  letter-spacing: 2px;
+}
+
+.promo button {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border: white solid 2px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 200px;
+}
+
+.promo button:hover {
+  color: rgb(87, 87, 87);
+  border-color: rgb(87, 87, 87);
+}
+
+/* промо для трьох турів */
+.tours {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.tours div {
+  flex: 0 0 30%;
+  justify-content: center;
+  align-items: center;
+}
+.tours-img {
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+.tours h2 {
+  color: rgb(126, 84, 139);
+  font-family: "EB Garamond", serif;
+  font-size: 30px;
+  font-weight: 400px;
+  text-align: center;
+  border-top: 1px rgb(190, 155, 200, 0.5) solid;
+  border-bottom: 1px rgb(190, 155, 200, 0.5) solid;
+  padding: 16px 0 16px 0;
+  font-weight: 400;
+}
+
+.tours p {
+  color: rgb(126, 84, 139);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.tours img {
+  height: 200px;
+  width: 340px;
+  margin: 10px;
+  object-fit: cover;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.tours img:hover {
+  box-shadow: 10px 5px 5px rgb(190, 155, 200);
+  opacity: 0.7;
+}
+
+/* хелоу зер */
+.hello-there div {
+  background-color: rgb(126, 84, 139);
+  width: 70%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.hello-there {
+  height: 600px;
+  background-image: url(/src/img/travel-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello {
+  font-size: 44px;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.hello + p {
+  margin: 0;
+  padding: 30px;
+}
+
+/*  контактна форма йоууу ;)) */
+
+.contactlabel {
+  text-align: center;
+  display: inline;
+}
+#contact h3 {
+  color: rgb(126, 84, 139);
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1.5px;
+  font-size: 34px;
+  font-weight: 400;
+}
+#contact h2 {
+  color: rgb(126, 84, 139);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  border: 2px rgb(190, 155, 200) solid;
+  padding: 30px;
+}
+.contact-input {
+  display: inline;
+  margin-bottom: 20px;
+}
+#contact li {
+  padding: 0;
+  margin: 0 0 6px -40px;
+}
+
+#contact span {
+  border-bottom: 2px rgb(190, 155, 200) solid;
+}
+
+fieldset {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  width: 300px;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  height: 24px;
+  border: 1px gray solid;
+  transition: 0.2s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+::placeholder {
+  color: rgb(189, 189, 189, 0.5);
+  opacity: 1;
+}
+
+textarea {
+  width: 100%;
+  border: 1px gray solid;
+}
+
+input:focus {
+  background-color: rgb(227, 215, 230, 0.5);
+  border-color: white;
+}
+
+#contact button {
+  background-color: rgb(190, 155, 200);
+  color: white;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  padding: 4px 8px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.buttom-want {
+  background-color: rgb(190, 155, 200);
+  color: white;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  padding: 4px 8px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.buttom-want:hover {
+  color: rgb(190, 155, 200);
+  background-color: white;
+}
+
+#contact button:hover {
+  color: rgb(190, 155, 200);
+  background-color: white;
+}
+/* done */
+footer {
+  background-color: rgb(126, 84, 139);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 6px;
+  background-size: cover;
+  position: relative;
+}
+footer p {
+  text-align: center;
+}
+
+/* another pages */
+
+.page-header {
+  padding: 90px 0;
+  margin: 28px 0 0 0;
+  color: white;
+  text-align: center;
+}
+
+.our-tours {
+  background-image: url(/src/img/promo-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+}
+
+/* gallery */
+
+.gallery-list {
+  background-color: white;
+  margin: 200px 100px;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 40px 80px 40px;
+  scroll-snap-type: y;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.gallery-list h2 {
+  font-size: 20px;
+  color: rgb(126, 84, 139);
+}
+
+.gallery-list span {
+  font-size: 16px;
+  margin-left: 20px;
+  color: rgb(190, 155, 200);
+  border-left: 2px rgb(190, 155, 200) solid;
+  padding: 0 0 0 16px;
+}
+
+.gallery-list ul img {
+  width: 90%;
+  margin-bottom: 30px;
+  object-fit: contain;
+  transition: ease-in-out;
+}
+
+.gallery-list ul img:hover {
+  overflow: hidden;
+  transform: scale(1.05);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.gallery-list li {
+  min-width: 500px;
+}
+
+.gallery-list ul {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.gallery-list ul::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 155, 200);
+}
+.gallery-list ul::-webkit-scrollbar-track {
+  background-color: rgb(190, 155, 200, 0.5);
+}
+.gallery-list ul::-webkit-scrollbar {
+  background-color: rgb(190, 155, 200, 0.5);
+}
+
+.plane {
+  color: rgb(243, 173, 184);
+}
+.plane:hover {
+  color: white;
+}
+.arrow-up {
+  text-align: right;
+  padding: 20px;
+  /* size: 50px; */
+  font-size: 20px;
+  color: rgb(126, 84, 139);
+  /* text-decoration: none; */
+}
+#arrow {
+  text-decoration: none;
+}
+#arrow:hover {
+  color: rgb(126, 84, 139);
+}
+#arrow:visited {
+  color: rgb(126, 84, 139);
+}
+/*  ------------------------------------ */
+@media screen and (min-width: 801px) {
+  nav .fa {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gallery-list li {
+    min-width: 0px;
+    padding: 0px;
+  }
+
+  .gallery-list ul {
+    display: inline-block;
+    overflow-x: hidden;
+    padding: 0;
+  }
+
+  .gallery-list {
+    margin: 0;
+    text-align: center;
+    flex-basis: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #toogle {
+    /* position: relative; */
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    margin-left: 2px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav > li {
+    display: block;
+  }
+  .tours img {
+    margin: 0;
+  }
+
+  nav ul li {
+    display: block;
+  }
+  header {
+    align-items: center;
+    position: sticky;
+    padding-bottom: 10px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menutop ul li {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .gallery-list {
+    padding: 0;
+  }
+
+  a.center-link {
+    padding: 10px 0 10px 0;
+    color: white;
+  }
+  a.center-link:hover {
+    color: rgb(215, 212, 235);
+  }
+  .menutop ul {
+    display: inline;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .menutop {
+    position: fixed;
+
+    background: rgb(126, 84, 139);
+    height: 100%;
+    width: 200px;
+    top: 0;
+    display: flex;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+    margin: 0;
+  }
+
+  #italy:hover {
+    transform: scale(1);
+  }
+  nav .fa {
+    margin: 20px;
+    color: rgb(222, 131, 240);
+    font-size: 22px;
+    cursor: pointer;
+  }
+}

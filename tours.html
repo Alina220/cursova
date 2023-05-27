@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/src/icons/Favicon.ico.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Tours - Travel.Today</title>
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- <section class="sub-head"> -->
+      <span class="headname">
+        <a href="/index.html"> Travel.Today </a>
+      </span>
+      <nav>
+        <div class="menutop" id="menutops">
+          <i class="fa fa-times" onclick="hide()"></i>
+          <ul>
+            <li>
+              <a class="center-link" href="/index.html">Home</a>
+            </li>
+            <li><a class="center-link" href="/tours.html">Tours</a></li>
+            <li><a class="center-link" href="/gallery.html">Gallery</a></li>
+            <li>
+              <a class="center-link" href="#contact" onclick="hide()"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="show()"></i>
+      </nav>
+    </header>
+    <main>
+      <section class="promo">
+        <h1 id="mytext" class="page-header">Our Tours</h1>
+      </section>
+
+      <section class="tours">
+        <div>
+          <h2>Venice</h2>
+          <img src="/src/img/italy.jpg" alt="italy" />
+          <p class="tours-img">
+            A wonderful tour to the city of Italy that will leave visitors with
+            wonderful emotions!
+          </p>
+          <br />
+
+          <button
+            id="scrollButton"
+            class="buttom-want"
+            type="submit"
+            name="submit"
+            value="submit"
+            data-target="contact"
+          >
+            I want it!
+          </button>
+        </div>
+        <div>
+          <h2>San Francisco</h2>
+          <img src="/src/img/san-fr-tour.jpg" alt="san francisco" />
+          <p class="tours-img">
+            Everyone wants to visit the Golden Gate, San Francisco invites
+            everyone!
+          </p>
+          <br />
+          <button
+            id="scrollButton"
+            class="buttom-want"
+            type="submit"
+            name="submit"
+            value="submit"
+            data-target="contact"
+          >
+            I want it!
+          </button>
+        </div>
+        <div>
+          <h2>Prague</h2>
+          <img src="/src/img/prague-tour.jpg" alt="Prague" />
+          <p class="tours-img">
+            The main attraction of the Old Town is the town hall clock. Be sure
+            to visit!
+          </p>
+          <br />
+          <button
+            id="scrollButton"
+            class="buttom-want"
+            type="submit"
+            name="submit"
+            value="submit"
+            data-target="contact"
+          >
+            I want it!
+          </button>
+        </div>
+        <div>
+          <h2>London</h2>
+          <img src="/src/img/london.jpg" alt="italy" />
+          <p class="tours-img">
+            The incredible sight of London, Big Ben, also visit Buckingham
+            Palace!
+          </p>
+          <br />
+          <button
+            id="scrollButton"
+            class="buttom-want"
+            type="submit"
+            name="submit"
+            value="submit"
+            data-target="contact"
+          >
+            I want it!
+          </button>
+        </div>
+        <div>
+          <h2>Paris</h2>
+          <img src="/src/img/paris.jpg" alt="italy" />
+          <p class="tours-img">
+            Visit the capital of love, where you may find your happiness!
+          </p>
+          <br />
+          <button
+            id="scrollButton"
+            class="buttom-want"
+            type="submit"
+            name="submit"
+            value="submit"
+            data-target="contact"
+          >
+            I want it!
+          </button>
+        </div>
+        <div>
+          <h2>Wien</h2>
+          <img src="/src/img/wien.jpg" alt="italy" />
+          <p class="tours-img">
+            Visit the residence of the emperors of Austria in Vienna!
+          </p>
+          <br />
+          <button
+            id="scrollButton"
+            class="buttom-want"
+            type="submit"
+            name="submit"
+            value="submit"
+            data-target="contact"
+          >
+            I want it!
+          </button>
+        </div>
+      </section>
+
+      <section id="contact" class="main-contact">
+        <div class="contactlabel">
+          <h2>Contact</h2>
+          <h3>Travel Time co.</h3>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/travel/" target="_blank">
+                <span>inst:</span> @traveltime</a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com/TravelMagazine" target="_blank"
+                ><span>twitter:</span> @travelagency</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="contact-input">
+          <form action="">
+            <fieldset action="mailto:email@email.com">
+              <label for="first-name"
+                >First Name <span class="required"></span></label
+              ><br />
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                required
+              /><br />
+              <label for="last-name"
+                >Last Name <span class="required"></span></label
+              ><br />
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                required
+              /><br />
+              <label for="email">Email <span class="required"></span></label
+              ><br />
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="travel@gmail.com"
+              /><br />
+              <label for="subject">Subject <span class="required"></span></label
+              ><br />
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="I want to order a tour!"
+                required
+              />
+              <br />
+              <label for="message">Message</label> <br />
+              <textarea
+                name="message"
+                id="message"
+                cols="31"
+                rows="6"
+                required
+              ></textarea>
+              <button type="submit" name="submit" value="Submit">
+                Submit!
+              </button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="arrow-up">
+          <a href="#" id="arrow">
+            <i class="fa fa-arrow-up"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2023 by Alina Ihnatych.</p>
+    </footer>
+    <script>
+      let menutop = document.getElementById("menutops");
+      function show() {
+        menutop.style.right = "0";
+      }
+      function hide() {
+        menutop.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
