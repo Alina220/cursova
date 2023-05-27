@@ -115,7 +115,7 @@ li > a {
 
 .promo {
   text-align: center;
-  background-image: url(/src/img/promo-bg.jpg);
+  background-image: url(promo-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
@@ -219,7 +219,7 @@ h1 {
 
 .hello-there {
   height: 600px;
-  background-image: url(/src/img/travel-bg.jpg);
+  background-image: url(travel-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -360,7 +360,7 @@ footer p {
 }
 
 .our-tours {
-  background-image: url(/src/img/promo-bg.jpg);
+  background-image: url(promo-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
