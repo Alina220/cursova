@@ -95,8 +95,10 @@ header > span {
 }
 
 a {
+  color: rgb(126, 84, 139);
   text-decoration: none;
 }
+
 
 a:hover {
   color: rgb(190, 155, 200);
