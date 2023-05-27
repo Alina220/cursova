@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Gallery- Travel.Today</title>
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- <section class="sub-head"> -->
+      <span class="headname">
+        <a href="/index.html"> Travel.Today </a>
+      </span>
+      <nav>
+        <div class="menutop" id="menutops">
+          <i class="fa fa-times" onclick="hide()"></i>
+          <ul>
+            <li>
+              <a class="center-link" href="/index.html">Home</a>
+            </li>
+            <li><a class="center-link" href="/tours.html">Tours</a></li>
+            <li><a class="center-link" href="/gallery.html">Gallery</a></li>
+            <li>
+              <a class="center-link" href="#contact" onclick="hide()"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="show()"></i>
+      </nav>
+    </header>
+
+    <main>
+      <section class="promo">
+        <h1 id="mytext" class="page-header">Gallery</h1>
+      </section>
+
+      <section class="gallery-list">
+        <ul>
+          <li id="album1">
+            <h2>Our Corporative Party<span>17 photos</span></h2>
+            <img src="/src/img/party.jpg" alt="party" />
+          </li>
+          <li>
+            <h2>From Our Team<span>23 photos</span></h2>
+            <img src="/src/img/our-team.jpg" alt="our team" />
+          </li>
+          <li>
+            <h2>Travel.Time's New Office<span>10 photos</span></h2>
+            <img src="/src/img/our-office.jpg" alt="our office" />
+          </li>
+          <li id="album4">
+            <h2>From Our Costumers<span>34 photos</span></h2>
+            <img src="/src/img/our-costumers.jpg" alt="our costumers" />
+          </li>
+        </ul>
+      </section>
+      <section class="our-tours"></section>
+
+      <section id="contact" class="main-contact">
+        <div class="contactlabel">
+          <h2>Contact</h2>
+          <h3>Travel Time co.</h3>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/travel/" target="_blank">
+                <span>inst:</span> @traveltime</a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com/TravelMagazine" target="_blank"
+                ><span>twitter:</span> @travelagency</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="contact-input">
+          <fieldset>
+            <label for="first-name">First Name</label><br />
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              required
+            /><br />
+            <label for="last-name">Last Name</label><br />
+            <input type="text" name="last-name" id="last-name" required /><br />
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="travel@gmail.com"
+            /><br />
+            <label for="subject">Subject</label><br />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="I want to order a tour!"
+              required
+            />
+            <br />
+            <label for="message">Message</label> <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="31"
+              rows="6"
+              required
+            ></textarea>
+            <button type="submit" name="submit" value="submit">Sumbit!</button>
+          </fieldset>
+        </div>
+      </section>
+      <div class="arrow-up">
+        <a href="#" id="arrow">
+          <i class="fa fa-arrow-up"></i>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2023 by Alina Ihnatych.</p>
+    </footer>
+    <script>
+      let menutop = document.getElementById("menutops");
+      function show() {
+        menutop.style.right = "0";
+      }
+      function hide() {
+        menutop.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
